@@ -17,14 +17,7 @@ class Point {
         this.y = y;
     }
 }
-distanceBetweenPoints = (a, b) => {
-  // const dx = a.x - b.x;
-  // const dy = a.y - b.y;
-  return Math.hypot((a.x - b.x), (a.y - b.y));
-}
-    // displayName = "Point";
-    // distance = (a, b) => {
-    // };
+distanceBetweenPoints = (a, b) => Math.hypot((a.x - b.x), (a.y - b.y));
 
 console.log(distanceBetweenPoints(new Point(3, 3), new Point(3, 3)));
 console.log(distanceBetweenPoints(new Point(1, 6), new Point(4, 2)));

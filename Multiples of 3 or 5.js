@@ -24,8 +24,8 @@ solution = (number) => {
 
 
 
-console.log(solution(10), 23);
-console.log(solution(15), 50);
+console.log(solution(999));
+console.log(solution(1000), 50);
 console.log(solution(20), 88);
 console.log(solution(-7), 88);
 console.log(solution(""), 88);

@@ -16,7 +16,7 @@ movies [80, 110, 40] => false
 */
 
 const flightLength = 160;
-const movies = [15, 25, 510, 100, 110];
+const movies = [15, 25, 50, 100, 110];
 
 // twoMovies = (flightLength, movies) => {
 //     const movieObj = {};

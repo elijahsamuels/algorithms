@@ -42,3 +42,8 @@ for(let i = 0; i < len; i++) {
 return sqauredNums.sort((a,b) => a-b)
 
 };
+
+
+
+
+// find the 

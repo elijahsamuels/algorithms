@@ -45,22 +45,22 @@ Faster, more ideal
 
 */
 
-// twoMovies = (flightLength, movies) => {
-//     const movieObj = {};
-//     let len = movies.length;
+twoMovies = (flightLength, movies) => {
+    const movieObj = {};
+    let len = movies.length;
 
-//     for (let i = 0; i < len; i++) {
-//         let diff = flightLength - movies[i];
+    for (let i = 0; i < len; i++) {
+        let diff = flightLength - movies[i];
 
-//         if (movieObj[diff]) {
-//             return true;
-//         }
-//         movieObj[movies[i]] = true // "any truthy value";
-//     }
-//     return false;
-// };
+        if (movieObj[diff]) {
+            return true;
+        }
+        movieObj[movies[i]] = true // "any truthy value";
+    }
+    return false;
+};
 
-// twoMovies(flightLength, movies);
+twoMovies(flightLength, movies);
 
 // //Using a Set
 twoMovies = (flightLength, movies) => {

@@ -22,4 +22,6 @@ TODO.md
 .vscode
 
 /node-course
-/nameCheckr - Checkr Interview
+/nameCheckr\ \-\ Checkr\ Interview
+
+git rm --cached /node-course

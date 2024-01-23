@@ -1,5 +1,4 @@
-{
-    /*
+/*
     https://leetcode.com/problems/merge-two-sorted-lists/
     
 Merge two sorted linked lists and return it as a sorted list. The list should be made by splicing together the nodes of the first two lists.
@@ -25,7 +24,7 @@ Both l1 and l2 are sorted in non-decreasing order.
 
 
 */
-}
+
 
 // const l1 = [1, 2, 4, 5];
 // const l2 = [1, 3, 4, 6]
@@ -45,8 +44,8 @@ mergeTwoLists = (list1, list2) => {
     let len1 = list1.length;
     let len2 = list2.length;
     while (list1.value ) {
-        for (){
-
+        for (true){
+            return true
         }
     }
 

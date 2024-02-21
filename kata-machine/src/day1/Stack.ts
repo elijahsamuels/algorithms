@@ -1,18 +1,45 @@
+// FIFO: first in last out
+
+type Node<T> = {
+  value: T;
+  prev?: Node<T>;
+};
+
 export default class Stack<T> {
-    public length: number;
+  public length: number;
+  private head?: Node<T>;
 
-    
+  constructor() {
+    this.head = undefined;
+    this.length = 0;
+  }
 
-    constructor() {
+  push(item: T): void {
+    const node = { value: item } as Node<T>;
+
+    this.length++;
+    if (!this.head) {
+      this.head = node;
+      return;
     }
 
-    push(item: T): void {
+    node.prev = this.head;
+    this.head = node;
+  }
 
-}
-    pop(): T | undefined {
+  pop(): T | undefined {
+    this.length = Math.max(-0, this.length - 1);
+    const head = this.head as Node<T>;
 
-}
-    peek(): T | undefined {
+    if (this.length === 0) {
+      this.head = undefined;
+      return head?.value;
+    }
+    this.head = head.prev;
+    return head.value;
+  }
 
-}
+  peek(): T | undefined {
+    return this.head?.value;
+  }
 }

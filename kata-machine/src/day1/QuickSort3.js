@@ -6,10 +6,10 @@
 const quickSort = (arr) => {
 
   const partition = (arr, low, high) => {
-    const pivot = arr[high];
+    const pivot = arr[high]; // the pivot value isn't 100% necessary
     let i = low - 1;
     for (let j = low; j < high; j++) {
-      if (arr[j] <= pivot) {
+      if (arr[j] <= pivot) { //you CAN compare the arr[j] <= arr[high]
         i++;
 				
         let temp = arr[i];
